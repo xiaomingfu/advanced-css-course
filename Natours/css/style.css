@@ -1,15 +1,22 @@
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
+html {
+  font-size: 62.5%;
+}
+
 body {
+  box-sizing: border-box;
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  /* font-size: 16px; */
   line-height: 1.7;
   color: #777;
-  padding: 30px;
+  padding: 3rem;
 }
 .header {
   height: 95vh;
@@ -26,15 +33,15 @@ body {
   position: relative;
 }
 
-.logo-box {
+.header__logo-box {
   position: absolute;
-  top: 40px;
-  left: 40px;
+  top: 4rem;
+  left: 4rem;
 }
-.logo {
-  height: 35px;
+.header__logo {
+  height: 3.5rem;
 }
-.text-box {
+.header__text-box {
   position: absolute;
   left: 50%;
   top: 40%;
@@ -46,13 +53,13 @@ body {
   text-transform: uppercase;
 
   backface-visibility: hidden;
-  margin-bottom: 60px;
+  margin-bottom: 6rem;
 }
-.heading-primary-main {
+.heading-primary--main {
   display: block;
-  font-size: 60px;
+  font-size: 6rem;
   font-weight: 400;
-  letter-spacing: 35px;
+  letter-spacing: 3.5rem;
 
   animation-name: moveInLeft;
   animation-duration: 3s;
@@ -61,11 +68,11 @@ body {
   /* animation-iteration-count: 3s;
   animation-delay: 2s; */
 }
-.heading-primary-sub {
+.heading-primary--sub {
   display: block;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 400;
-  letter-spacing: 17.4px;
+  letter-spacing: 1.74rem;
 
   animation-name: moveInRight;
   animation-duration: 3s;
@@ -74,10 +81,10 @@ body {
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-10rem);
   }
   80% {
-    transform: translateX(20px);
+    transform: translateX(2rem);
   }
   100% {
     opacity: 1;
@@ -88,10 +95,10 @@ body {
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(10rem);
   }
   80% {
-    transform: translateX(-20px);
+    transform: translateX(-2rem);
   }
   100% {
     opacity: 1;
@@ -102,7 +109,7 @@ body {
 @keyframes moveInBottom {
   0% {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(3rem);
   }
   100% {
     opacity: 1;
@@ -114,23 +121,23 @@ body {
 .btn:visited {
   text-decoration: none;
   text-transform: uppercase;
-  padding: 15px 40px;
+  padding: 1.5rem 4rem;
   display: inline-block;
-  border-radius: 100px;
+  border-radius: 10rem;
   transition: all 0.2s;
   position: relative;
 }
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
-.btn-white {
+.btn--white {
   background-color: #fff;
   color: #777;
 }
@@ -139,21 +146,21 @@ body {
   display: inline-block;
   height: 100%;
   width: 100%;
-  border-radius: 100px;
+  border-radius: 10rem;
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
   transition: all 0.4s;
 }
-.btn-white::after {
+.btn--white::after {
   background-color: #fff;
 }
 .btn:hover::after {
   transform: scaleX(1.5) scaleY(1.6);
   opacity: 0;
 }
-.btn-animated {
+.btn--animated {
   animation: moveInBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards;
 }
