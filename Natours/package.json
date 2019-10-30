@@ -1,0 +1,14 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "- using the universal selector `*` to do a basic reset - set project-wide font defitions - clip parts of elements with `clip-path` - using `span` tag in `h1` tag to get block display two line of heading - using `transform: translate(-50%, -50%)` to corect the position based on the elements width and height - animation - pseudo-elements and pseudo-classes - `::after` - using `transition` property to create a creatitve hover animation effect",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
