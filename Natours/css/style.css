@@ -194,6 +194,9 @@ body {
   box-shadow: 0 1.6rem 3rem rgba(0, 0, 0, 0.2);
   height: 50rem; }
 
+.form {
+  width: 50%; }
+
 .btn:link, .btn:visited {
   text-decoration: none;
   text-transform: uppercase;
