@@ -193,9 +193,9 @@ body {
   border-radius: 3px;
   box-shadow: 0 1.6rem 3rem rgba(0, 0, 0, 0.2);
   height: 50rem; }
-
-.form {
-  width: 50%; }
+  .book__form {
+    width: 50%;
+    padding: 6rem; }
 
 .btn:link, .btn:visited {
   text-decoration: none;
@@ -457,3 +457,35 @@ body {
     height: 100%;
     width: 100%;
     object-fit: cover; }
+
+.form__input {
+  font-size: 1.5rem;
+  font-family: inherit;
+  padding: 1.5rem 2rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 2px;
+  border-bottom: 1px solid transparent;
+  width: 90%;
+  display: block; }
+  .form__input:focus {
+    outline: none;
+    border-bottom: 1px solid #55c57a;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2); }
+  .form__input:focus:invalid {
+    border-bottom: 1px solid #ff7730; }
+  .form__input::-webkit-input-placeholder {
+    color: #999; }
+
+.form__label {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: 0.6rem;
+  display: block;
+  transition: all 0.3s; }
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-3rem); }
