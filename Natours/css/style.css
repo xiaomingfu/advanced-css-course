@@ -467,7 +467,8 @@ body {
   border-radius: 2px;
   border-bottom: 1px solid transparent;
   width: 90%;
-  display: block; }
+  display: block;
+  transition: all 0.3s; }
   .form__input:focus {
     outline: none;
     border-bottom: 1px solid #55c57a;
