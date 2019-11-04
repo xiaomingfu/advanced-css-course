@@ -95,7 +95,7 @@
   }
 
   &__checkbox:checked ~ &__background {
-    transform: scale(60);
+    transform: scale(70);
   }
 
   &__checkbox:checked ~ &__nav {
@@ -108,6 +108,7 @@
     position: relative;
     margin-top: 3.5rem;
     margin-left: 2rem;
+    transition: all 0.2s;
 
     &,
     &::before,
@@ -139,5 +140,19 @@
   }
   &__button:hover &__icon::after {
     top: 1rem;
+  }
+
+  &__checkbox:checked + &__button &__icon {
+    background-color: transparent;
+  }
+
+  &__checkbox:checked + &__button &__icon::before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+
+  &__checkbox:checked + &__button &__icon::after {
+    top: 0;
+    transform: rotate(-135deg);
   }
 }
