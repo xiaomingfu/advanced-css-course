@@ -681,3 +681,21 @@ body {
 
 .form__radio-input:checked ~ .form__radio-label .form__radio-btn::after {
   opacity: 1; }
+
+.popup {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999; }
+  .popup__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 50rem;
+    background-color: white;
+    box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5); }
