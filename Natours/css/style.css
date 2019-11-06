@@ -438,11 +438,19 @@ body {
   background-image: linear-gradient(103deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url("../img/nat-10.jpg");
   background-size: 100%;
   border-radius: 3px;
-  box-shadow: 0 1.6rem 3rem rgba(0, 0, 0, 0.2);
-  height: 50rem; }
+  box-shadow: 0 1.6rem 3rem rgba(0, 0, 0, 0.2); }
+  @media (max-width: 75em) {
+    .book {
+      background-size: cover; } }
+  @media (max-width: 56.25em) {
+    .book {
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%, transparent 50%), url("../img/nat-10.jpg"); } }
   .book__form {
     width: 50%;
     padding: 6rem; }
+    @media (max-width: 56.25em) {
+      .book__form {
+        width: 100%; } }
 
 .btn, .btn:link, .btn:visited {
   font-size: 2rem;
@@ -788,6 +796,9 @@ body {
   width: 90%;
   display: block;
   transition: all 0.3s; }
+  @media (max-width: 56.25em) {
+    .form__input {
+      width: 100%; } }
   .form__input:focus {
     outline: none;
     border-bottom: 1px solid #55c57a;
@@ -814,6 +825,10 @@ body {
   width: 45%;
   display: inline-block;
   position: relative; }
+  @media (max-width: 56.25em) {
+    .form__radio-group {
+      width: 100%;
+      margin-bottom: 3rem; } }
 
 .form__radio-label {
   font-size: 1.6rem;
@@ -896,14 +911,14 @@ body {
   .popup__left {
     width: 33.33333%;
     display: table-cell; }
+  .popup__img {
+    width: 100%;
+    display: block; }
   .popup__right {
     width: 66.66666%;
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem; }
-  .popup__img {
-    display: block;
-    width: 100%; }
   .popup__text {
     font-size: 1.4rem;
     margin-bottom: 4rem;
@@ -917,3 +932,20 @@ body {
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto; }
+  @media (max-width: 56.25em) {
+    .popup__left {
+      width: 33.33333%;
+      display: table-cell;
+      vertical-align: middle; }
+    .popup__img {
+      width: 100%;
+      display: block; }
+    .popup__right {
+      width: 66.6666%;
+      display: table-cell;
+      padding: 1rem 2rem; }
+    .popup__text {
+      font-size: 1.4rem;
+      margin-bottom: 4rem;
+      -moz-column-count: 1;
+      column-count: 1; } }

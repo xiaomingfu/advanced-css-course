@@ -11,6 +11,10 @@
     display: block;
     transition: all 0.3s;
 
+    @include respond(tab-port) {
+      width: 100%;
+    }
+
     &:focus {
       outline: none;
       border-bottom: 1px solid $color-primary;
@@ -45,6 +49,11 @@
     width: 45%;
     display: inline-block;
     position: relative;
+
+    @include respond(tab-port) {
+      width: 100%;
+      margin-bottom: 3rem;
+    }
   }
 
   &__radio-label {
