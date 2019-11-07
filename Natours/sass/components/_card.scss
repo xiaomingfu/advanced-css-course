@@ -15,6 +15,7 @@
     left: 0;
     width: 100%;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     border-radius: 3px;
     box-shadow: $box-shadow-light;
     overflow: hidden;
@@ -74,6 +75,16 @@
           $color-secondary-dark
         ),
         url(../img/nat-5.jpg);
+
+      @media (min-resolution: 192dpi) and (min-width: 37.5em),
+        (min-width: 125em) {
+        background-image: linear-gradient(
+            to right bottom,
+            $color-secondary-light,
+            $color-secondary-dark
+          ),
+          url(../img/nat-5.jpg);
+      }
     }
     &--p2 {
       background-image: linear-gradient(
@@ -82,6 +93,16 @@
           $color-primary-dark
         ),
         url(../img/nat-6.jpg);
+
+      @media (min-resolution: 192dpi) and (min-width: 37.5em),
+        (min-width: 125em) {
+        background-image: linear-gradient(
+            to right bottom,
+            $color-secondary-light,
+            $color-secondary-dark
+          ),
+          url(../img/nat-5.jpg);
+      }
     }
     &--p3 {
       background-image: linear-gradient(
@@ -90,6 +111,16 @@
           $color-tertiary-dark
         ),
         url(../img/nat-7.jpg);
+
+      @media (min-resolution: 192dpi) and (min-width: 37.5em),
+        (min-width: 125em) {
+        background-image: linear-gradient(
+            to right bottom,
+            $color-secondary-light,
+            $color-secondary-dark
+          ),
+          url(../img/nat-5.jpg);
+      }
     }
   }
 
