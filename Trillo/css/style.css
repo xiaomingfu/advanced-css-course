@@ -101,7 +101,7 @@ body {
     height: 100%;
     display: flex;
     align-items: center; }
-  .user-nav > * :hover {
+  .user-nav > *:hover {
     background-color: var(--color-grey-light-2); }
   .user-nav__icon-box {
     position: relative; }
