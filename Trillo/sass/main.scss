@@ -16,5 +16,6 @@ Grey dark 3: #999
 
 */
 @import "base";
-@import "components";
+@import "./components/_header.scss";
+@import "./components/_sidebar.scss";
 @import "layout";

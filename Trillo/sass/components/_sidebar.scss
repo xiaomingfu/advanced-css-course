@@ -1,0 +1,21 @@
+.side-nav {
+  &__item {
+  }
+
+  &__link {
+  }
+
+  &__icon {
+    height: 1.75rem;
+    width: 1.75rem;
+    fill: var(--color-grey-light-4);
+  }
+}
+
+// LEGAL TEXT
+.legal {
+  font-size: 1.2rem;
+  color: var(--color-grey-light-4);
+  padding: 2.5rem;
+  text-align: center;
+}

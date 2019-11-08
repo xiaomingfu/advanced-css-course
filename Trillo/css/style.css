@@ -128,6 +128,17 @@ body {
     border-radius: 50%;
     margin-right: 2rem; }
 
+.side-nav__icon {
+  height: 1.75rem;
+  width: 1.75rem;
+  fill: var(--color-grey-light-4); }
+
+.legal {
+  font-size: 1.2rem;
+  color: var(--color-grey-light-4);
+  padding: 2.5rem;
+  text-align: center; }
+
 .container {
   max-width: 120rem;
   margin: 8rem auto;
@@ -149,8 +160,12 @@ body {
 
 .sidebar {
   flex: 0 0 18%;
-  background-color: var(--color-grey-dark-1); }
+  background-color: var(--color-grey-dark-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
 
 .hotel-view {
   flex-grow: 1;
-  background-color: azure; }
+  background-color: azure;
+  height: 80rem; }
