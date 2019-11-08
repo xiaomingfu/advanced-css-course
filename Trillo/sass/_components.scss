@@ -1,7 +1,7 @@
 // LOGO
 .logo {
   height: 3.25rem;
-  margin-left: 3rem;
+  margin-left: 2rem;
 }
 
 // SEARCH
@@ -63,26 +63,49 @@
 .user-nav {
   display: flex;
 
+  align-self: stretch;
+
+  & > * {
+    padding: 0 2rem;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  & > * :hover {
+    background-color: var(--color-grey-light-2);
+  }
   &__icon-box {
+    position: relative;
   }
 
   &__icon {
     height: 2.5rem;
     width: 2.5rem;
+    fill: var(--color-grey-dark-2);
   }
 
   &__notification {
-  }
+    position: absolute;
+    top: 2rem;
+    left: 3.5rem;
+    font-size: 0.8rem;
+    height: 1.4rem;
+    width: 1.4rem;
+    border-radius: 50%;
+    color: #fff;
+    background-color: var(--color-primary);
 
-  &__user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   &__user-photo {
     height: 3.75rem;
     width: 3.75rem;
     border-radius: 50%;
-  }
-
-  &__user-name {
+    margin-right: 2rem;
   }
 }
