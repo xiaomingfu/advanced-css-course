@@ -1,0 +1,88 @@
+// LOGO
+.logo {
+  height: 3.25rem;
+  margin-left: 3rem;
+}
+
+// SEARCH
+.search {
+  flex: 0 0 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__input {
+    font-size: 1.4rem;
+    font-family: inherit;
+    color: inherit;
+    padding: 0.7rem 2rem;
+    width: 90%;
+    margin-right: -3.25rem;
+    border: none;
+    background-color: var(--color-grey-light-2);
+    border-radius: 100px;
+    transition: all 0.2s;
+
+    &:focus {
+      width: 100%;
+      background-color: var(--color-grey-light-3);
+      outline: none;
+    }
+
+    &::-webkit-input-placeholder {
+      font-weight: 100;
+      color: var(--color-grey-light-4);
+    }
+  }
+
+  &__input:focus + &__button {
+    background-color: var(--color-grey-light-3);
+  }
+
+  &__button {
+    border: none;
+    background-color: var(--color-grey-light-2);
+
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+
+  &__icon {
+    height: 2rem;
+    width: 2rem;
+    fill: var(--color-grey-dark-3);
+  }
+}
+
+// USER
+.user-nav {
+  display: flex;
+
+  &__icon-box {
+  }
+
+  &__icon {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  &__notification {
+  }
+
+  &__user {
+  }
+
+  &__user-photo {
+    height: 3.75rem;
+    width: 3.75rem;
+    border-radius: 50%;
+  }
+
+  &__user-name {
+  }
+}
