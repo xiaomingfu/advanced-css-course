@@ -14,7 +14,7 @@
 .header {
   height: 7rem;
   background-color: #fff;
-  border-bottom: 1px solid var(--color-grey-light-2);
+  border-bottom: var(--line);
 
   display: flex;
   flex-direction: row;
@@ -32,7 +32,4 @@
 
 .hotel-view {
   flex-grow: 1;
-  // test
-
-  height: 80rem;
 }
