@@ -2,11 +2,23 @@
   margin-top: 4rem;
   list-style: none;
   font-size: 1.5rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    display: flex;
+    margin: 0;
+  }
   &__item {
     position: relative;
 
     &:not(:last-child) {
       margin-bottom: 0.5rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      flex: 1;
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -44,6 +56,16 @@
 
     display: flex;
     align-items: center;
+
+    @media only screen and (max-width: $bp-medium) {
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+      padding: 1.5rem 0.5rem;
+    }
   }
 
   &__icon {
@@ -51,6 +73,13 @@
     width: 1.75rem;
     fill: currentColor;
     margin-right: 2rem;
+
+    @media only screen and (max-width: $bp-small) {
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-right: 0;
+      margin-bottom: 0.4rem;
+    }
   }
 }
 
@@ -60,4 +89,8 @@
   color: var(--color-grey-light-4);
   padding: 2.5rem;
   text-align: center;
+
+  @media only screen and (max-width: $bp-medium) {
+    display: none;
+  }
 }

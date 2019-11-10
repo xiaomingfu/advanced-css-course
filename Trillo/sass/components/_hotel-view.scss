@@ -18,6 +18,11 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     padding: 1.5rem 3rem;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.5rem;
+      padding: 1.2rem 1.4rem;
+    }
   }
 
   &__stars {
@@ -53,6 +58,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 0 1.5rem;
+    }
   }
 
   &__rating-count {
@@ -63,6 +72,9 @@
   &__rating-average {
     font-size: 2.25rem;
     font-weight: 300;
+    @media only screen and (max-width: $bp-small) {
+      font-size: 2rem;
+    }
   }
 }
 
@@ -115,6 +127,15 @@
   display: flex;
   padding: 4.5rem;
   background-color: var(--color-grey-light-1);
+
+  @media only screen and (max-width: $bp-medium) {
+    justify-content: center;
+    padding: 3rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+  }
 }
 
 .description {
@@ -124,6 +145,16 @@
   box-shadow: var(--shadow-light);
   background-color: #fff;
   border-bottom: var(--line);
+
+  @media only screen and (max-width: $bp-medium) {
+    justify-content: center;
+    padding: 2rem;
+    margin-right: 3rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    margin-right: 0;
+  }
 }
 
 .user-reviews {
@@ -182,6 +213,10 @@
     margin-right: auto;
   }
 
+  &__friends {
+    display: flex;
+  }
+
   &__photo {
     box-sizing: content-box;
     height: 3.5rem;
@@ -190,7 +225,7 @@
     border: 3px solid #fff;
 
     &:not(:last-child) {
-      margin-right: -1.5rem;
+      margin-right: -1.8rem;
     }
   }
 }
@@ -204,6 +239,11 @@
   flex-direction: column;
   position: relative;
   overflow: hidden;
+
+  @media only screen and(max-width: $bp-medium) {
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+  }
 
   &__text {
     margin-bottom: 2rem;

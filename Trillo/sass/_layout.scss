@@ -5,10 +5,21 @@
   box-shadow: var(--shadow-dark);
 
   min-height: 50rem;
+
+  @media only screen and (max-width: $bp-largest) {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+  }
 }
 
 .content {
   display: flex;
+
+  @media only screen and (max-width: $bp-medium) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .header {
@@ -20,6 +31,12 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  @media only screen and (max-width: $bp-xsmall) {
+    flex-wrap: wrap;
+    height: 11rem;
+    align-items: space-around;
+  }
 }
 
 .sidebar {
