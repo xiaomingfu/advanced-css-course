@@ -75,8 +75,17 @@
   cursor: pointer;
   transition: all 0.2s;
 
+  & span {
+    margin-left: 3px;
+    transition: margin-left 0.2s;
+  }
+
   &:hover {
     color: var(--color-grey-dark-1);
+
+    span {
+      margin-left: 8px;
+    }
   }
   &:focus {
     outline: none;
@@ -102,13 +111,13 @@
 }
 
 .detail {
+  font-size: 1.4rem;
   display: flex;
   padding: 4.5rem;
   background-color: var(--color-grey-light-1);
 }
 
 .description {
-  font-size: 1.4rem;
   flex: 0 0 60%;
   padding: 1.5rem 2.5rem;
   margin-right: 4.5rem;
@@ -119,7 +128,10 @@
 
 .user-reviews {
   flex: 1;
-  background-color: azure;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .paragraph:not(:last-of-type) {
@@ -180,5 +192,67 @@
     &:not(:last-child) {
       margin-right: -1.5rem;
     }
+  }
+}
+
+.review {
+  margin-bottom: 3.5rem;
+  padding: 3rem;
+  box-shadow: var(--shadow-light);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+
+  &__text {
+    margin-bottom: 2rem;
+    z-index: 10;
+    position: relative;
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+  }
+
+  &__photo {
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+
+  &__user-box {
+    margin-right: auto;
+  }
+
+  &__user-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+  }
+
+  &__user-date {
+    font-size: 1rem;
+    color: var(--color-grey-dark-3);
+  }
+
+  &__rating {
+    font-size: 1.8rem;
+    font-weight: 200;
+    color: var(--color-primary);
+  }
+
+  &::before {
+    content: "\201C";
+    position: absolute;
+    font-family: sans-serif;
+    top: 7rem;
+    left: -1rem;
+    line-height: 1rem;
+    font-size: 20rem;
+    color: var(--color-grey-light-2);
   }
 }
