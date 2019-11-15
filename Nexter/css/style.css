@@ -74,7 +74,26 @@ body {
 
 .sidebar {
   background-color: #c69963;
-  grid-row: 1 / -1; }
+  grid-row: 1 / -1;
+  display: flex;
+  justify-content: center; }
+  .sidebar__nav {
+    border: none;
+    border-radius: 0;
+    height: 2px;
+    background-color: #fff;
+    width: 4.5rem;
+    margin-top: 4rem; }
+    .sidebar__nav::before, .sidebar__nav::after {
+      content: "";
+      height: 2px;
+      background-color: #fff;
+      width: 4.5rem;
+      display: block; }
+    .sidebar__nav::before {
+      transform: translateY(-1.5rem); }
+    .sidebar__nav::after {
+      transform: translateY(1.3rem); }
 
 .header {
   background-color: #54483a;
