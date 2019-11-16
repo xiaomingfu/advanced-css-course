@@ -1,9 +1,33 @@
 .gallery {
   display: flex;
 
+  &__item {
+    position: relative;
+  }
+
+  &__item:hover &__name {
+    opacity: 1;
+  }
+
   &__photo {
     width: 100%;
     display: block;
+  }
+
+  &__name {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    text-align: center;
+    padding-top: 25%;
+    opacity: 0;
+    transition: all 0.3s;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
   }
 }
 
